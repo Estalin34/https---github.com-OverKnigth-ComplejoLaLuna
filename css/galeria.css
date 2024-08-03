@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+body {
+    font-family: "Montserrat", sans-serif;
+    padding: 20px;
+    background-color: #f0f8ff; /* Fondo suave */
+    line-height: 1.6; /* Mejora la legibilidad */
+}
+
+.navbar {
+    background-color: #333; /* Fondo del navbar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    border-radius: 10px;
+}
+
+.navbar-brand img {
+    width: 60px;
+    height: 60px;
+    margin-left: 10px;
+}
+
+.nav-link {
+    color: #fff !important; /* Color de enlaces */
+    font-size: 20px; /* Tamaño de fuente */
+    transition: color 0.3s; /* Transición suave para el hover */
+}
+
+.nav-link:hover {
+    color: #007bff; /* Color al pasar el ratón */
+}
+
+.dropdown-menu {
+    background-color: #ffffff; /* Color de fondo del menú desplegable */
+}
+
+.dropdown-item:hover {
+    background-color: #e9ecef; /* Color de fondo al pasar el ratón */
+}
+
+.carousel {
+    margin: 20px 0; /* Espacio superior e inferior para los carruseles */
+}
+
+.carousel-item {
+    height: 400px; /* Altura ajustada para los carruseles */
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que la imagen cubra el área sin deformarse */
+}
+
+.textos {
+    padding: 20px;
+    font-size: 18px; /* Tamaño de fuente */
+    color: #555; /* Color del texto */
+}
+
+h1, h2, h3 {
+    color: #30475E; /* Color de encabezados */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+hr {
+    border: 1px solid #0056b3; /* Color de la línea horizontal */
+    margin: 30px 0; /* Margen ajustado */
+}
+
+footer {
+    background-color: #343a40; /* Fondo oscuro */
+    color: #fff;
+    padding: 20px 0; /* Espaciado interno */
+}
+
+footer a {
+    color: #fff; /* Color del enlace en el pie de página */
+    transition: color 0.3s; /* Transición suave para el hover */
+}
+
+footer a:hover {
+    color: #007bff; /* Color al pasar el ratón */
+}
+
+/* Estilos para los controles del carrusel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para los iconos */
+}

@@ -1,0 +1,243 @@
+/* Importar fuentes desde Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+/* Estilos básicos para el cuerpo del documento */
+body {
+  font-family: "Lato", sans-serif;
+  padding: 20px;
+  background-color: #f0f8ff; /* Fondo suave */
+  color: #343a40; /* Color del texto */
+  line-height: 1.6; /* Mejora la legibilidad */
+}
+
+/* Estilos para el navegador */
+.navbar {
+  background-color: #333; /* Fondo del navbar */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  border-radius: 10px;
+}
+
+.navbar-brand img {
+  width: 60px;
+  height: 60px;
+  margin-left: 10px;
+}
+
+.nav-link {
+  color: #fff !important; /* Color de enlaces */
+  font-size: 20px; /* Tamaño de fuente */
+  transition: color 0.3s; /* Transición suave para el hover */
+}
+
+.nav-link:hover {
+  color: #007bff; /* Color al pasar el ratón */
+}
+
+.dropdown-menu {
+  background-color: #ffffff; /* Color de fondo del menú desplegable */
+}
+
+.dropdown-item:hover {
+  background-color: #e9ecef; /* Color de fondo al pasar el ratón */
+}
+
+/* Estilos para el carrusel */
+.carousel {
+  width: 100%; /* Ocupa todo el ancho del contenedor */
+  margin: 0 auto; /* Centra el carrusel */
+  position: relative;
+}
+
+.carousel-item {
+  height: 600px; /* Altura ajustada para un mejor enfoque visual */
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Asegura que la imagen cubra el área sin deformarse */
+}
+
+/* Estilos para texto en secciones */
+.textos {
+  padding: 20px;
+  font-size: 18px; /* Tamaño de fuente */
+  color: #555; /* Color del texto */
+}
+
+/* Estilos para encabezados */
+h1,
+h2,
+h3 {
+  color: #30475e; /* Color de encabezados */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilos para la línea horizontal */
+hr {
+  border: 1px solid #0056b3; /* Color de la línea horizontal */
+  margin: 30px 0; /* Margen ajustado */
+}
+
+/* Estilos para el mapa */
+#map {
+  height: 400px;
+  width: 100%; /* Ajustar a 100% para mejor visualización */
+  margin: 20px 0;
+  border: 2px solid #dba979; /* Borde azul */
+  border-radius: 8px; /* Bordes redondeados */
+}
+
+/* Estilos para el pie de página */
+footer {
+  background-color: #343a40; /* Fondo oscuro */
+  color: #fff;
+  padding: 20px 0; /* Espaciado interno */
+}
+
+footer a {
+  color: #fff; /* Color del enlace en el pie de página */
+  transition: color 0.3s; /* Transición suave para el hover */
+}
+
+footer a:hover {
+  color: #007bff; /* Color al pasar el ratón */
+}
+
+/* Diseño responsivo para pantallas medianas */
+@media (max-width: 1200px) {
+  .navbar-nav {
+    text-align: center; /* Centra los enlaces en dispositivos más pequeños */
+  }
+
+  .nav-link {
+    font-size: 18px; /* Tamaño de fuente más pequeño en pantallas medianas */
+  }
+
+  .textos {
+    font-size: 16px; /* Tamaño de texto más pequeño */
+  }
+}
+
+/* Diseño responsivo para pantallas pequeñas */
+@media (max-width: 992px) {
+  .carousel-item {
+    height: 400px; /* Altura ajustada para pantallas más pequeñas */
+  }
+
+  h1 {
+    font-size: 26px; /* Tamaño de encabezado ajustado */
+  }
+
+  h2 {
+    font-size: 22px; /* Tamaño de encabezado ajustado */
+  }
+}
+
+/* Diseño responsivo para pantallas muy pequeñas */
+@media (max-width: 768px) {
+  .textos {
+    font-size: 14px; /* Tamaño de texto aún más pequeño en móviles */
+  }
+
+  h1 {
+    font-size: 24px; /* Tamaño de encabezado ajustado */
+  }
+
+  h2 {
+    font-size: 20px; /* Tamaño de encabezado ajustado */
+  }
+
+  #map {
+    height: 300px; /* Altura del mapa ajustada en móviles */
+  }
+
+  .navbar {
+    border-radius: 0; /* Sin bordes redondeados en móviles */
+  }
+}
+
+/* Diseño responsivo para pantallas extra pequeñas */
+@media (max-width: 576px) {
+  h1 {
+    font-size: 22px; /* Tamaño de encabezado ajustado */
+  }
+
+  h2 {
+    font-size: 18px; /* Tamaño de encabezado ajustado */
+  }
+
+  .nav-link {
+    font-size: 16px; /* Tamaño de fuente más pequeño en pantallas muy pequeñas */
+  }
+
+  .textos {
+    font-size: 12px; /* Tamaño de texto más pequeño */
+  }
+
+  footer {
+    padding: 10px 0; /* Menos espaciado en el pie de página */
+  }
+}
+
+/* Estilos adicionales para pantallas grandes */
+@media (min-width: 1600px) {
+  .textos {
+    font-size: 20px; /* Tamaño de texto más grande en pantallas grandes */
+  }
+
+  h1 {
+    font-size: 36px; /* Tamaño de encabezado grande */
+  }
+
+  h2 {
+    font-size: 30px; /* Tamaño de encabezado grande */
+  }
+
+  #map {
+    height: 500px; /* Altura del mapa ajustada en pantallas grandes */
+  }
+}
+
+/* CSS para asegurar que las imágenes ocupen todo el ancho */
+.img-fluid {
+  width: 100%;
+  height: auto;
+}
+
+/* CSS para alinear el contenido y las imágenes en secciones */
+#vision,
+#mision {
+  text-align: left;
+  padding-left: 20px; /* Ajusta el relleno según sea necesario */
+}
+
+/* Estilo para texto vertical */
+.vertical-text {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  text-align: center;
+  margin: 0;
+  font-size: 2rem; /* Ajusta el tamaño del texto vertical si es necesario */
+}
+
+/* Alineación y espaciado del texto en las secciones */
+#vision .row,
+#mision .row {
+  margin: 10;
+}
+
+#vision h2,
+#mision h2 {
+  margin-bottom: 1rem;
+}
+
+#vision p,
+#mision p {
+  margin-top: 10;
+  margin-bottom: 1rem;
+}
+
+.text-justify {
+  text-align: justify;
+}
